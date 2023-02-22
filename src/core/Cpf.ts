@@ -26,29 +26,25 @@ export default class Cpf {
 
         if (everyDigitsEqualToFirst) return true;
 
-        try {
-            let d1 = 0;
-            let d2 = 0;
+        let d1 = 0;
+        let d2 = 0;
 
-            for (let i = 0; i < length - 2; i++) {
-                const digito = parseInt(clearCpf[i]);
-                d1 = d1 + ((10 - i) * digito);
-                d2 = d2 + ((11 - i) * digito);
-            };
+        for (let i = 0; i < length - 2; i++) {
+            const digito = parseInt(clearCpf[i]);
+            d1 = d1 + ((10 - i) * digito);
+            d2 = d2 + ((11 - i) * digito);
+        };
 
-            let rest = (d1 % 11);
+        let rest = (d1 % 11);
 
-            const dg1 = (rest < 2) ? 0 : 11 - rest;
-            d2 += 2 * dg1;
+        const dg1 = (rest < 2) ? 0 : 11 - rest;
+        d2 += 2 * dg1;
 
-            rest = (d2 % 11);
-            const dg2 = (rest < 2) ? 0 : 11 - rest;
+        rest = (d2 % 11);
+        const dg2 = (rest < 2) ? 0 : 11 - rest;
 
-            let nDigVerific = clearCpf.substring(length - 2, length);
-            const nDigResult = "" + dg1 + "" + dg2;
-            return nDigVerific === nDigResult;
-        } catch (e) {
-            return false;
-        }
+        let nDigVerific = clearCpf.substring(length - 2, length);
+        const nDigResult = "" + dg1 + "" + dg2;
+        return nDigVerific === nDigResult;
     }
 }
