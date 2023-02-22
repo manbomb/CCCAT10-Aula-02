@@ -1,5 +1,5 @@
 {
-    "name": "cccat10-aula-01",
+    "name": "cccat10-aula-02",
     "version": "1.0.0",
     "description": "Desafio da primeira aula do Curso de Clean Code e Clean Arch do Branas",
     "main": "index.js",
@@ -8,15 +8,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/manbomb/CCCAT10-Aula-01.git"
+        "url": "git+https://github.com/manbomb/CCCAT10-Aula-02.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/manbomb/CCCAT10-Aula-01/issues"
+        "url": "https://github.com/manbomb/CCCAT10-Aula-02/issues"
     },
-    "homepage": "https://github.com/manbomb/CCCAT10-Aula-01#readme",
+    "homepage": "https://github.com/manbomb/CCCAT10-Aula-02#readme",
     "dependencies": {
         "@types/jest": "^29.4.0",
         "jest": "^29.4.1",
