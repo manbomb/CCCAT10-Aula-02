@@ -24,7 +24,7 @@ export default class Cpf {
         const digits = clearCpf.split("");
         const everyDigitsEqualToFirst = digits.every(digit => digit === firstDigit);
 
-        if (everyDigitsEqualToFirst) return true;
+        if (everyDigitsEqualToFirst) return false;
 
         let d1 = 0;
         let d2 = 0;
